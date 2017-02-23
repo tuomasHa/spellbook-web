@@ -1,0 +1,45 @@
+
+//Paths
+$image-path: '../res/img/';
+$font-path: '../res/fonts/';
+
+//Color scheme
+$book-cover-color: #AC7272;
+$page-color: #EADCCE;
+$gold-trim-color: #FFDF00;
+
+//Fonts
+//Journal
+$journal-font-file-path: $font-path + 'Journal.ttf';
+$journal-font-file-format: 'truetype';
+$journal-font-name: 'Journal';
+$journal-font: $journal-font-name, sans-serif;
+//Pops
+$pops-font-file-path: $font-path + 'Pops-regular.ttf';
+$pops-font-file-format: 'truetype';
+$pops-font-name: 'Pops';
+$pops-font: $pops-font-name, sans-serif;
+//Skinny
+$skinny-font-file-path: $font-path + 'Skinny-regular.ttf';
+$skinny-font-file-format: 'truetype';
+$skinny-font-name: 'Skinny';
+$skinny-font: $skinny-font-name, sans-serif;
+
+//Navigation
+$navigation-bg-color: $book-cover-color;
+$navigation-font-color: $gold-trim-color;
+$navigation-height: 50px;
+$navigation-font-size: 20px;
+$navigation-link-padding-top-and-bottom:
+  ($navigation-height - $navigation-font-size) / 2;
+$navigation-link-padding-left-and-right: 10px;
+$navigation-link-padding:
+  $navigation-link-padding-top-and-bottom $navigation-link-padding-left-and-right;
+
+//Page
+$page-bg-color: $page-color;
+$page-bg-image: url($image-path + 'paper.jpg');
+$page-padding-top-bottom: 10px;
+$page-padding-left-right: 20px;
+$page-padding: $page-padding-top-bottom $page-padding-left-right;
+$page-font-size: 40px;

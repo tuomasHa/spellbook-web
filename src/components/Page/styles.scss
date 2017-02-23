@@ -1,0 +1,9 @@
+.page{
+  background-color: $page-bg-color;
+  background-image: $page-bg-image;
+  padding: $page-padding;
+  padding-top: $navigation-height + $page-padding-top-bottom;
+  min-height: 100vh;
+  box-sizing: border-box;
+  font-size: $page-font-size;
+}

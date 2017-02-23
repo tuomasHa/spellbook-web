@@ -1,0 +1,20 @@
+@include font($journal-font-name, $journal-font-file-path,
+ $journal-font-file-format);
+
+ @include font($pops-font-name, $pops-font-file-path,
+  $pops-font-file-format);
+
+  @include font($skinny-font-name, $skinny-font-file-path,
+   $skinny-font-file-format);
+
+.journal-font{
+  font-family: $journal-font;
+}
+
+.pops-font{
+  font-family: $pops-font;
+}
+
+.skinny-font{
+  font-family: $skinny-font;
+}
