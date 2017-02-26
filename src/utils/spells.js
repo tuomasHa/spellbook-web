@@ -5,6 +5,7 @@ class Spell {
     this.notes = notes;
     this.color = color;
     this.icon = icon;
+    this.enabled = false;
   }
 }
 
@@ -24,6 +25,10 @@ const spells = {
   },
   setCount: (spell, count) => {
     spell.count = count;
+    spellStorage.save();
+  },
+  setEnabled: function (spell, value) {
+    spell.enabled = value;
     spellStorage.save();
   },
   remove: function (index) {

@@ -16,6 +16,13 @@ export default class PrepareSpell extends React.Component{
       this.forceUpdate();
     }
 
+    this.enabledChange = (event) => {
+      if(typeof event.target.checked === 'boolean') {
+        spells.setEnabled(this.state.spell, event.target.checked);
+        this.forceUpdate();
+      }
+    }
+
     this.inc = () => {
       spells.add(this.state.spell);
       this.forceUpdate();
@@ -28,6 +35,8 @@ export default class PrepareSpell extends React.Component{
 
   render(){
     return <div className='prepare-spell'>
+    <input type='checkbox' className='prepare-spell-enable'
+    onChange={this.enabledChange} checked={this.state.spell.enabled} />
       <span className='prepare-spell-name'>{this.state.spell.name}</span>
       <span className='prepare-spell-notes' >{this.state.spell.notes}</span>
       <label className='prepare-spell-count-label' >

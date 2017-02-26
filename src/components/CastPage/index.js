@@ -4,7 +4,7 @@ import CastSpell from './CastSpell';
 import {Spell, spells} from '../../utils/spells';
 
 const renderSpell = (e, i) => {
-  return <CastSpell key={'cast-spell-' + i} spell={e}/>;
+  return e.enabled ? <CastSpell key={'cast-spell-' + i} spell={e}/> : '';
 }
 
 export default class CastPage extends React.Component{
