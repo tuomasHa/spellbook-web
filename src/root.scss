@@ -2,7 +2,19 @@
 @import 'style/mixins.scss';
 @import 'style/fonts.scss';
 
-body{
+body {
   padding: 0;
   margin: 0;
+}
+
+input {
+  height: $input-height;
+
+  &[type='text'] {
+    width: $input-text-width;
+  }
+
+  &[type='checkbox'] {
+    width: $input-height;
+  }
 }
