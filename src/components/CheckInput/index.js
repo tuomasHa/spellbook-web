@@ -1,5 +1,6 @@
 import React from 'react';
 import {spells} from '../../utils/spells';
+require('./styles.scss');
 
 export default class PrepareSpell extends React.Component{
   constructor(props){

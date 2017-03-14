@@ -44,9 +44,9 @@ export default class PrepareSpell extends React.Component{
           value={this.state.spell.count} onChange={this.onChange} />
       </label>
       <input type='button' className='prepare-spell-increment'
-        onClick={this.inc} />
+        onClick={this.inc} value='Add'/>
       <input type='button' className='prepare-spell-decrement'
-        onClick={this.dec} />
+        onClick={this.dec} value='Dec'/>
     </div>;
   }
 

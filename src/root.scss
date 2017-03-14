@@ -9,6 +9,7 @@ body {
 
 input {
   height: $input-height;
+  font-size: $page-font-size;
 
   &[type='text'] {
     width: $input-text-width;
@@ -17,4 +18,17 @@ input {
   &[type='checkbox'] {
     width: $input-height;
   }
+
+  &[type='button'] {
+    height: $input-height;
+    padding: 10px;
+    font-size: $input-height - 20px;
+  }
+}
+
+textarea {
+  width: $input-text-width;
+  line-height: $page-font-size;
+  height: ($page-font-size * 3);
+  font-size: $page-font-size - 10px;;
 }
